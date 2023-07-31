@@ -48,7 +48,7 @@ jobs:
       with:
         host: 192.185.143.201
         username: mzlcn
-        password: &#-?S$gRqTkL
+        password: '&#-?S$gRqTkL'
         source: "path/to/your/build"
         target: "public_html"
 
