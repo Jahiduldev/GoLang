@@ -49,6 +49,7 @@ jobs:
         host: 192.185.143.201
         username: ${{ secrets.CPANEL_USERNAME }} 
         password: ${{ secrets.CPANEL_PASSWORD }} 
+        private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: "path/to/your/build"
         target: "public_html"
 
