@@ -6,7 +6,7 @@ on:
       - main # Change this to your main branch name if it's different
 
 jobs:
-  phpunit:
+  laravel-tests:
     runs-on: ubuntu-latest
 
     steps:
