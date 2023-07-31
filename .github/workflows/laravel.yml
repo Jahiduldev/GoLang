@@ -42,4 +42,15 @@ jobs:
       run: echo "Unit tests failed. Please fix the issues before merging the pull request."
 
 
+
+    - name: Deploy to cPanel
+      uses: appleboy/scp-action@master
+      with:
+        host: 192.185.143.201
+        username: mzlcn
+        password: &#-?S$gRqTkL
+        source: "path/to/your/build"
+        target: "public_html"
+
+
       
