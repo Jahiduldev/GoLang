@@ -21,5 +21,8 @@ jobs:
     - name: Install dependencies
       run: composer install
 
+    - name: Generate Application Key
+      run: php artisan key:generate
+
     - name: Run PHPUnit tests
       run: vendor/bin/phpunit
