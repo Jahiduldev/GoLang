@@ -16,7 +16,7 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.4' # Change this to your desired PHP version
+        php-version: '8.2' # Change this to your desired PHP version
 
     - name: Install dependencies
       run: composer install
