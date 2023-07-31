@@ -36,6 +36,10 @@ jobs:
     - name: Run PHPUnit tests
       run: vendor/bin/phpunit
 
+    - name: Check test status
+      if: ${{ failure() }}
+      continue-on-error: true
+      run: echo "Unit tests failed. Please fix the issues before merging the pull request."
 
 
       
