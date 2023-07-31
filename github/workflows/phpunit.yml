@@ -1,0 +1,25 @@
+name: Run PHPUnit Tests
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name if it's different
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4' # Change this to your desired PHP version
+
+    - name: Install dependencies
+      run: composer install
+
+    - name: Run PHPUnit tests
+      run: vendor/bin/phpunit
